@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Yizhou Wan/Desktop/Midterm/Midterm1-2/main.c
+stdio.h
+-
+ctype.h
+-
+stdlib.h
+-
+
