@@ -1,0 +1,46 @@
+#include <stdio.h>
+#include <ctype.h>
+#include <stdlib.h>
+
+int whichOne(char C, char *s1, char *s2){
+    printf('%c',isdigit(C));
+    if(isdigit(C)!= 1){
+        printf("Sorry! Invalid C input");
+        exit(-1);
+    }
+    int counta =0;
+    int countb =0;
+    char *pa = s1;
+    char *pb = s2;
+
+   while(*pa != '\0'){
+        if (*pa == C){
+            counta++;
+        }
+        pa++;
+    }
+    while(*pb != '\0'){
+        if (*pb == C){
+            countb++;
+        }
+        pb++;
+    }
+    if (counta > countb){
+        sprintf(stdout,"string one is the one");
+        return counta;
+    }
+    else if (countb > counta){
+        sprintf(stdout,"string two is the one");
+        return countb;
+    }
+    else if (countb == counta){
+        sprintf(stdout,"neither string is the one");
+        return 0;
+    }
+}
+
+
+
+}
+
+
